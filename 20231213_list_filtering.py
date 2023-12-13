@@ -37,3 +37,8 @@ print('共有', len(filtering), '筆資料長度小於100')
 good = [d for d in data if 'good' in d] #速寫法
 
 print('共有', len(good), '筆資料中有good')
+
+
+#判斷每筆留言有無bad出現
+bad = ['bad' in d for d in data]
+print(bad)
